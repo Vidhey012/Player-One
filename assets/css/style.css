@@ -1029,7 +1029,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   position: absolute;
   min-width: 225px;
   padding: 18px 20px;
-  background: #ffffff;
+  background-image:url(../img/menu_bg.jpg);
   -webkit-box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 3px 11px 0 rgba(0, 0, 0, 0.1);
   left: 0;
@@ -1050,7 +1050,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   display: block;
   line-height: 32px;
   text-transform: capitalize;
-  color: #000000;
+  color: #ffffff;
 }
 .main_menu nav > ul > li ul.sub_menu li a:hover {
   color: #b154f0;
