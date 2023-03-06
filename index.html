@@ -1,43 +1,53 @@
 <html>
 
 <head>
-    <title>Player One</title>
-    <link rel='Shortcut Icon' type='image/x-icon' href='assets/img/logo.png'>
+	<title>Player One</title>
+	<link rel='Shortcut Icon' type='image/x-icon' href='assets/img/logo.png'>
 	<style type="text/css">
-        html {
-            overflow: auto;
-        }
-          
-        html,
-        body,
-        div,
-        iframe {
-            margin: 0px;
-            padding: 0px;
-            height: 100%;
-            border: none;
-        }
-          
-        iframe {
-            display: block;
-            width: 100%;
-            border: none;
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-    </style>
+	html {
+		overflow: auto;
+	}
+	
+	html,
+	body,
+	iframe {
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+		border: none;
+	}
+	
+	iframe {
+		display: block;
+		width: 100%;
+		border: none;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	</style>
 </head>
 
 <body>
-    <iframe id="Frame" src="" style="height: 100%; width: 100%; border:none;"></iframe>
-    <script type="text/javascript">
-        
-        window.onload = function onStartup() //------------------------------------------------------>>executed when page is loaded
-            {
-				currentPage="indexMain.html";
-                document.getElementById("Frame").src = currentPage;
-            }
-    </script>
+	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="assets/music/song1.mp3" loop="loop" controls></audio>
+	</div>
+	<iframe id="Frame" src="" style="height: 100%; width: 100%; border:none;"></iframe>
+	<script src="assets/js/swal1.js"></script>
+	<script type="text/javascript">
+	window.onload = function onStartup() //------------------------------------------------------>>executed when page is loaded
+		{
+			currentPage = "indexMain.html";
+			document.getElementById("Frame").src = currentPage;
+			Swal.fire({
+				html: '<h1>Hello Player</h1><h2>Unleash the gamer in you :)</h2>',
+				color: '#ffffff',
+				background: 'url(assets/img/popup.jpg) no-repeat',
+				icon: 'info',
+				confirmButtonText: "Yeah, Sure!",
+			}).then((result) => {
+				document.getElementById("my_audio").play();
+			});
+		}
+	</script>
 </body>
 
 </html>
