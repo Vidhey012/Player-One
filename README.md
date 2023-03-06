@@ -1,2 +1,2 @@
 # Player One
-live: https://player-one.netlify.app
+live: https://player1.netlify.app

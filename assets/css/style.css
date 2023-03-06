@@ -26,6 +26,21 @@
           box-sizing: border-box;
 }
 
+[data-title]:hover:after {
+    visibility: visible;
+}
+          
+[data-title]:after {
+    content: attr(data-title);
+    background-image: url(../img/menu_bg.jpg);    
+    color: white;
+    font-size: 150%;
+	display:block;
+    position: absolute;
+    padding: 4px 8px 4px 8px;
+    visibility: hidden;
+}
+
 html, body {
   height: 100%;
 }
