@@ -24,11 +24,17 @@
 		overflow-y: auto;
 		overflow-x: hidden;
 	}
+	
+	.swal2-title {
+		font-family: "Refault", Georgia;
+		background-color: rgba(43, 165, 137, 0.8);
+		width:86%;
+	}
 	</style>
 </head>
 
 <body>
-	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="assets/music/song1.mp3" loop="loop" controls></audio>
+	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="assets/music/song2.mp3" loop="loop" controls></audio>
 	</div>
 	<iframe id="Frame" src="" style="height: 100%; width: 100%; border:none;"></iframe>
 	<script src="assets/js/swal1.js"></script>
@@ -38,10 +44,10 @@
 			currentPage = "indexMain.html";
 			document.getElementById("Frame").src = currentPage;
 			Swal.fire({
-				html: '<h1>Hello Player</h1><h2>Unleash the gamer in you :)</h2>',
+				title: 'Unleash the gamer in you :) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
+				imageUrl: 'assets/img/bg/robot.gif',
 				color: '#ffffff',
-				background: 'url(assets/img/popup.jpg) no-repeat',
-				icon: 'info',
+				background: 'url(assets/img/bg/popup.gif) repeat-y',
 				confirmButtonText: "Yeah, Sure!",
 			}).then((result) => {
 				document.getElementById("my_audio").play();

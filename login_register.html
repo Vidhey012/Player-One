@@ -1,0 +1,312 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Player One</title>
+	<meta name="description" content="240+ Best Bootstrap Templates are available on this website. Find your template for your project compatible with the most popular HTML library in the world." />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Add site Favicon -->
+	<link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+	<!-- CSS 
+    ========================= -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Metal+Mania&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/icofont.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css"> 
+	<style type="text/css">
+         body{
+		 display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: 'Jost', sans-serif;
+		 overflow-x:hidden;
+         }
+         .main{
+		 justify-content: center;
+         align-items: center;
+         width: 450px;
+         height: 650px;
+         background: red;
+         overflow: hidden;
+         background: url("assets/img/popup.jpg") no-repeat center/ cover;
+         border-radius: 10px;
+         box-shadow: 5px 20px 50px #000;
+         }
+         #chk{
+         display: none;
+         }
+         .signup{
+         width:100%;
+         height: 100%;
+         }
+         label{
+         color: #fff;
+         font-size: 2.3em;
+         justify-content: center;
+         display: flex;
+         margin: 60px;
+         font-weight: bold;
+         cursor: pointer;
+         transition: .5s ease-in-out;
+         }
+         input{
+         width: 400px;
+         background: #e0dede;
+         justify-content: center;
+         display: flex;
+         margin: 20px auto;
+         padding: 10px;
+         border: none;
+         outline: none;
+         border-radius: 5px;
+         }
+         button{
+         width: 60%;
+         height: 40px;
+         margin: 10px auto;
+         justify-content: center;
+         display: block;
+         color: #fff;
+         background: #FF5E00;
+         font-size: 1em;
+         font-weight: bold;
+         margin-top: 20px;
+         outline: none;
+         border: none;
+         border-radius: 5px;
+         transition: .2s ease-in;
+         cursor: pointer;
+         }
+         button:hover{
+         background: #FF3131;
+         }
+         .login{
+         height: 560px;
+		 color:white;
+		 background: url("assets/img/menu_bg.jpg") no-repeat center/ cover;
+         border-radius: 60% / 10%;
+         transform: translateY(-180px);
+         transition: .8s ease-in-out;
+         }
+         .login label{
+         color: white;
+         transform: scale(.6);
+         }
+         #chk:checked ~ .login{
+         transform: translateY(-665px);
+         }
+         #chk:checked ~ .login label{
+         transform: scale(1);	
+         }
+         #chk:checked ~ .signup label{
+         transform: scale(.7);
+         }
+      </style>
+	</head>
+
+<body class="body__bg" data-bgimg="assets/img/bg/body-bg2.webp">
+	<!--offcanvas menu area start-->
+	<div class="body_overlay"> </div>
+	<div class="offcanvas_menu" data-bgimg="assets/img/bg/breadcrumbs-bg.webp">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="offcanvas_menu_wrapper" style="background-image:url('assets/img/menu_bg.jpg');">
+						<div class="canvas_close"> <a href="javascript:void(0)"><i style="color:white;" class="icofont-close"></i></a> </div>
+						<div id="menu" class="text-left ">
+							<ul class="offcanvas_main_menu">
+								<li class="menu-item-has-children active"> <a href="indexMain.html" style="color:white;">Home</a> </li>
+								<li class="menu-item-has-children"><a href="pc_gaming.html" style="color:white;">PC Gaming</a>
+									<!-- <ul class="sub-menu">
+                                        <li><a href="match.html">Match Page</a></li>
+                                        <li><a href="match-details.html">Match Details</a></li>
+                                    </ul>-->
+								</li>
+								<li class="menu-item-has-children"><a href="mobile_gaming.html" style="color:white;">Mobile Gaming</a> </li>
+								<li class="menu-item-has-children"> <a href="about.html" style="color:white;">About</a> </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--offcanvas menu area end-->
+	<!--header area start-->
+	<header class="header_section header_transparent sticky-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="main_header d-flex justify-content-between align-items-center">
+						<div class="header_logo">
+							<a class="sticky_none" href="indexMain.html"><img width="70px" src="assets/img/logo.png" alt=""></a>
+						</div>
+						<!--main menu start-->
+						<div class="main_menu d-none d-lg-block">
+							<nav>
+								<ul class="d-flex">
+									<li><a href="indexMain.html">Home</a></li>
+									<li><a href="pc_gaming.html">PC Gaming</a></li>
+									<li><a href="mobile_gaming.html">Mobile Gaming</a></li>
+									<li><a href="about.html">About</a> </li>
+								</ul>
+							</nav>
+						</div>
+						<!--main menu end-->
+						<div class="header_right_sidebar d-flex align-items-center">
+							<div class="canvas_open"> <a href="javascript:void(0)"><i class="icofont-navigation-menu"></i></a> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--header area end-->
+	<!-- page wrapper start -->
+		<div class="row" style="position:absolute; top:15%;"><div class="col-12 text-center justify-content-center align-items-center"><div class="main text-center">
+         <input type="checkbox" id="chk" aria-hidden="true">
+         <div class="signup text-center">
+            <form>
+               <label id="register_label" for="chk" aria-hidden="true" style="font-family: 'Refault', Georgia;">SIGN UP</label>
+               <input class="form-control w-75" type="text" name="txt" placeholder="User name" required="">
+               <input class="form-control w-75" type="email" name="email" placeholder="Email" required="">
+               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
+               <input class="form-control w-75" type="text" name="txt" placeholder="User name" required="">
+               <input class="form-control w-75" type="email" name="email" placeholder="Email" required="">
+               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
+               <button class="w-75">SIGN UP</button>
+            </form>
+         </div>
+         <div class="login text-center">
+            <form>
+               <label id="login_label" for="chk" aria-hidden="true" style="font-family: 'Refault', Georgia;"><br>LOGIN</label>
+               <input class="form-control w-75" type="email" name="email" placeholder="Email / User Name" required="">
+               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
+               <button class="w-75">LOGIN</button>
+            </form>
+         </div>
+		 </div>
+      </div>
+	  </div>
+		<!-- error section end -->
+		
+		<!-- page wrapper end -->
+		<!--footer area start-->
+		<!--<footer class="footer_widgets">
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer_bottom_inner d-flex justify-content-between" id="footer">
+                            <div class="copyright_right">
+                                <p> © CopyRight 2023 Made with <i class="icofont-heart"></i> by <a href="javascript:display_names()">JAVA</a></p>
+                            </div>
+                            <div class="footer_bottom_link_menu">
+                                <ul class="d-flex">
+                                    <li><a href="about.html">Terms & Conditions  </a></li>
+                                    <li><a href="about.html">Privacy Policy  </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>-->
+		<!--footer area end-->
+		<div id="anchor" onclick="topFunction()" style="display:none;position:fixed; bottom:30px; right:30px;">
+			<a id="scroll-top" href="#"><img src="assets/img/icon/scroll-top.webp" alt=""></a>
+		</div>
+		<!-- JS ============================================ -->
+		<!--modernizr min js here-->
+		<script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+		<!-- Vendor JS -->
+		<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+		<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+		<script src="assets/js/vendor/popper.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/wow.min.js"></script>
+		<script src="assets/js/jquery.nice-select.js"></script>
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/jquery-waypoints.js"></script>
+		<!-- Main JS -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/swal1.js"></script>
+		<script type="text/javascript">
+		let mybutton = document.getElementById("anchor");
+		window.onscroll = function() {
+			scrollFunction()
+		};
+
+		function scrollFunction() {
+			if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+		window.onload = function onStartup() //------------------------------------------------------>>executed when page is loaded
+			{
+				 document.getElementById("register_label").click();
+			     if(localStorage.getItem('login_flag')=='1'){
+					document.getElementById("register_label").click();
+					localStorage.setItem('login_flag','0');
+				 }
+				/*if(!isOnScreen($('#anchor1'))) {
+					document.getElementById("footer").style.position = 'relative';
+					document.getElementById("footer").style.top = '30px';
+				} else {
+					document.getElementById("footer").style.position = 'absolute';
+					document.getElementById("footer").style.bottom = '0px';
+					document.getElementById("footer").style.top = 'auto';
+				}
+				window.visualViewport.addEventListener("resize", browserResize);*/
+			}
+
+		/*function browserResize(event) {
+			if(!isOnScreen($('#anchor1'))) {
+				document.getElementById("footer").style.position = 'relative';
+				document.getElementById("footer").style.top = '30px';
+			} else {
+				document.getElementById("footer").style.position = 'absolute';
+				document.getElementById("footer").style.bottom = '0px';
+				document.getElementById("footer").style.top = 'auto';
+			}
+		}
+
+		function isOnScreen(element) {
+			var curPos = element.offset();
+			var curTop = curPos.top;
+			var screenHeight = $(window).height();
+			return(curTop > screenHeight) ? false : true;
+		}*/
+
+		function display_names() {
+			Swal.fire({
+				html: `<div align="center"><table style="color:white; text-align:left; font-size:50px;"><tr><td><b>J</b>ayanth</td></tr><tr><td><b>A</b>khilesh</td></tr><tr><td><b>V</b>idhey</td></tr><tr><td><b>A</b>bhijith</td></tr></table></div>`,
+				showConfirmButton: false,
+				background: '#000 url(assets/img/menu_bg.jpg)',
+				color: 'white',
+				timer: 4000,
+			});
+		}
+		</script>
+</body>
+
+</html>

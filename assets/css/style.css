@@ -1040,10 +1040,10 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .main_menu nav > ul > li > a::before {
   position: absolute;
   content: "";
-  background: url(../img/others/menu_shape.webp);
+  background: url(../img/others/menu_shape1.webp);
   left: 50%;
   top: 50%;
-  width: 94px;
+  width: 128px;
   height: 44px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);

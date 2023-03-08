@@ -65,19 +65,15 @@
 							<nav>
 								<ul class="d-flex">
 									<li><a href="indexMain.html">Home</a></li>
-									<li> <a href="#">Gaming</a>
-										<ul class="sub_menu">
-											<li><a href="pc_gaming.html">PC Gaming</a></li>
-											<li><a href="mobile_gaming.html">Mobile Gaming</a></li>
-										</ul>
-									</li>
+									<li><a href="pc_gaming.html">PC Gaming</a></li>
+									<li><a href="mobile_gaming.html">Mobile Gaming</a></li>
 									<li><a href="about.html">About</a> </li>
 								</ul>
 							</nav>
 						</div>
 						<!--main menu end-->
 						<div class="header_right_sidebar d-flex align-items-center">
-							<div class="sing_up_btn"> <a class="btn btn-link" href="404.html">SIGN IN <img src="assets/img/icon/arrrow-icon2.webp" alt=""> </a> </div>
+							<div class="sing_up_btn"> <a class="btn btn-link" href="login_register.html">LOGIN <img src="assets/img/icon/arrrow-icon2.webp" alt=""> </a> </div>
 							<div class="canvas_open"> <a href="javascript:void(0)"><i class="icofont-navigation-menu"></i></a> </div>
 						</div>
 					</div>
@@ -97,7 +93,7 @@
 							<div class="hero_content">
 								<h1 class="wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="1.1s">Ready <br> Player One.</h1>
 								<p class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">Player-One is the online E-sport hosting platform.
-									<br>Register to compete with the world.</p> <a class="btn btn-link wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s" href="sign_up.html">Register <img src="assets/img/icon/arrrow-icon.webp" alt=""> </a> </div>
+									<br>Register to compete with the world.</p> <a class="btn btn-link wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s" href="javascript:sign_up();">SIGN UP <img src="assets/img/icon/arrrow-icon.webp" alt=""> </a> </div>
 						</div>
 					</div>
 				</div>
@@ -452,6 +448,13 @@
 			color: 'white',
 			timer: 4000,
 		});
+	}
+	
+	function sign_up(){
+	
+		localStorage.setItem('login_flag','1');
+		window.location.href='login_register.html';
+	
 	}
 	</script>
 </body>
