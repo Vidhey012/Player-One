@@ -35,7 +35,6 @@
 
 <body>
 	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="assets/music/song2.mp3" loop="loop" controls></audio>
-	</div>
 	<iframe id="Frame" src="" style="height: 100%; width: 100%; border:none;"></iframe>
 	<script src="assets/js/swal1.js"></script>
 	<script type="text/javascript">
@@ -53,6 +52,14 @@
 				document.getElementById("my_audio").play();
 			});
 		}
+
+		document.addEventListener("visibilitychange", () => {
+			if (document.visibilityState === 'visible') {
+			document.getElementById("my_audio").play();
+			} else {
+				document.getElementById("my_audio").pause();
+			}
+		});
 	</script>
 </body>
 
