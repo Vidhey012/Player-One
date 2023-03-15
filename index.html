@@ -34,12 +34,14 @@
 </head>
 
 <body>
-	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="assets/music/song2.mp3" loop="loop" controls></audio>
+	<audio style="position:absolute; height:0%; width:0%; opacity:0;" id="my_audio" src="" loop="loop" controls></audio>
 	<iframe id="Frame" src="" style="height: 100%; width: 100%; border:none;"></iframe>
 	<script src="assets/js/swal1.js"></script>
 	<script type="text/javascript">
+	var music_flag;
 	window.onload = function onStartup() //------------------------------------------------------>>executed when page is loaded
 		{
+			document.getElementById("my_audio").src = getRandomSong();
 			currentPage = "indexMain.html";
 			document.getElementById("Frame").src = currentPage;
 			Swal.fire({
@@ -60,6 +62,26 @@
 				document.getElementById("my_audio").pause();
 			}
 		});
+		
+		function getRandomSong() {
+			if(localStorage.getItem('music_flag')==null)
+			{
+				music_flag=1;
+				localStorage.setItem('music_flag',music_flag);
+			} else{
+				music_flag=(parseInt(localStorage.getItem('music_flag'))+1)%3;
+				localStorage.setItem('music_flag',music_flag);
+			}
+			return "assets/music/song"+music_flag+".mp3";
+		}
+		
+		/*Email.send({
+				SecureToken : "33557277-4316-4c88-8eb2-2b9a4e7797f0",
+                From : "playeronesite@gmail.com",
+				To: "vidhey.bhogadi2003@gmail.com",
+				Subject: "'Vidhey-Qr website' Usage Detected !",
+				Body: "<div style='text-align:center;'><img src='https://vidhey-qrcode.netlify.app/logo.png' height='200px' width='200px'/><br/><br/><h1><u>Usage</u> <u>Details</u> :</h1><table border='0' style='margin-left:auto; margin-right:auto;'><tr><td><b>Name</b></td><td>:</td><td><b>" + username + "</b></td></tr><tr><td><b>Url</b></td><td>:</td><td><b>" + qrContent + "</b></td></tr></table></div>",
+			});*/
 	</script>
 </body>
 

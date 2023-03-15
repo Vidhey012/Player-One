@@ -90,7 +90,7 @@
          background: #FF3131;
          }
          .login{
-         height: 560px;
+         height: 590px;
 		 color:white;
 		 background: url("assets/img/menu_bg.jpg") no-repeat center/ cover;
          border-radius: 60% / 10%;
@@ -177,13 +177,13 @@
          <div class="signup text-center">
             <form>
                <label id="register_label" for="chk" aria-hidden="true" style="font-family: 'Refault', Georgia;">SIGN UP</label>
-               <input class="form-control w-75" type="text" name="txt" placeholder="User name" required="">
-               <input class="form-control w-75" type="email" name="email" placeholder="Email" required="">
-               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
-               <input class="form-control w-75" type="text" name="txt" placeholder="User name" required="">
-               <input class="form-control w-75" type="email" name="email" placeholder="Email" required="">
-               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
-               <button class="w-75">SIGN UP</button>
+               <input class="form-control w-75" pattern=".{3,}" title="must contain atleast 3 letters" type="text" id="name" placeholder="Player Name" required="">
+               <input class="form-control w-75" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="invalid email format" id="email" placeholder="Email Id" required="">
+               <input class="form-control w-75" type="text" pattern="[0-9]{10}" title="invalid mobile number" id="wa_number" placeholder="Whatsapp Number" required="">
+               <input class="form-control w-75" type="text" pattern="[a-zA-Z0-9]{5,15}" title="must contain 5 to 15 letters" id="u_name" placeholder="User Name" required="">
+               <input class="form-control w-75" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" id="password" placeholder="Password" required="">
+               <input class="form-control w-75" type="text" id="p_id" placeholder="Player Id" required="" disabled>
+               <button class="w-75" onclick="sign_up()">SIGN UP</button>
             </form>
          </div>
          <div class="login text-center">
@@ -305,6 +305,12 @@
 				color: 'white',
 				timer: 4000,
 			});
+		}
+		
+		function sign_up(){
+		
+			alert(document.getElementById("u_name").value);
+		
 		}
 		</script>
 </body>
