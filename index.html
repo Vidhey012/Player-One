@@ -43,7 +43,7 @@
 		{
 			currentPage = "indexMain.html";
 			document.getElementById("Frame").src = currentPage;
-			/*document.getElementById("my_audio").src = getRandomSong();
+			document.getElementById("my_audio").src = getRandomSong();
 			Swal.fire({
 				title: 'Unleash the gamer in you :) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;',
 				imageUrl: 'assets/img/bg/robot.gif',
@@ -52,10 +52,10 @@
 				confirmButtonText: "Yeah, Sure!",
 			}).then((result) => {
 				document.getElementById("my_audio").play();
-			});*/
+			});
 		}
 
-		/*document.addEventListener("visibilitychange", () => {
+		document.addEventListener("visibilitychange", () => {
 			if (document.visibilityState === 'visible') {
 			document.getElementById("my_audio").play();
 			} else {
@@ -73,7 +73,7 @@
 				localStorage.setItem('music_flag',music_flag);
 			}
 			return "assets/music/song"+music_flag+".mp3";
-		}*/
+		}
 		
 		/*Email.send({
 				SecureToken : "33557277-4316-4c88-8eb2-2b9a4e7797f0",
