@@ -189,9 +189,9 @@
          <div class="login text-center">
             <form>
                <label id="login_label" for="chk" aria-hidden="true" style="font-family: 'Refault', Georgia;"><br>LOGIN</label>
-               <input class="form-control w-75" type="email" name="email" placeholder="Email / User Name" required="">
-               <input class="form-control w-75" type="password" name="pswd" placeholder="Password" required="">
-               <button class="w-75">LOGIN</button>
+               <input class="form-control w-75" type="text" id="login_email" placeholder="Email / User Name" required="">
+               <input class="form-control w-75" type="password" id="login_password" placeholder="Password" required="">
+               <button class="w-75" onclick="log_in()">LOGIN</button>
             </form>
          </div>
 		 </div>
@@ -310,6 +310,12 @@
 		function sign_up(){
 		
 			alert(document.getElementById("u_name").value);
+		
+		}
+		
+		function log_in(){
+		
+			alert(document.getElementById("login_email").value);
 		
 		}
 		</script>
